@@ -20,7 +20,7 @@ export const CountryInfo = ({
   return (
     <CountryWrapper key={id}>
       <Flag>
-        <Image src={flag} alt={country}/>
+        <Image src={flag} alt={country} />
       </Flag>
       <CountryDescription>
         <CountryCapital>
@@ -34,7 +34,7 @@ export const CountryInfo = ({
         </CountryDetail>
 
         <CountryDetail>
-          Languages: <Accent>{languages.join(' | ')}</Accent>
+          Languages: <Accent>{languages.join(', ')}</Accent>
         </CountryDetail>
       </CountryDescription>
     </CountryWrapper>
